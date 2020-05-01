@@ -1,0 +1,16 @@
+{% extends 'base.html' %} {% block content %} {% for content in Content %} {{content.recipe_category}} {{content.recipe_name}} {{content.ingredients}} {{content.steps}} {{content.difficulty}} {% endfor %}
+
+<ul class="collapsible">
+    {% for content in Content %}
+    <li>
+        <div class="collapsible-header"><i class="material-icons">filter_drama</i>
+        {{content.recipe_name}} - {{content.recipe_category}}
+        </div>
+        <div class="collapsible-body">
+            <span>{{content.ingredients}} - {{content.steps}} - {{content.difficulty}}</span>
+            </div>
+    </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
