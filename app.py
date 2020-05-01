@@ -13,14 +13,20 @@ mongo = PyMongo(app)
 @app.route('/')
 @app.route('/recipe_list')
 def recipe_list():
-    return render_template("recipes.html", Content=mongo.db.Content.find())
+    return render_template('recipes.html', Content=mongo.db.Content.find())
     
-@app.route('/add_recipe')
-def add_recipe():
-    return render_template('addrecipes.html')
+@app.route('/add_recipes')
+def add_recipes():
+    return render_template('addrecipes.html',
+    categories=mongo.db.categories.find())
 
-    
+@app.route('/insert_recipe', methods=['POST'])
+def insert_recipe():
+    Content=mongo.db.Content
+    Content.insert_one(request.form.to_dict())
+    return redirect(url_for('recipe_list'))
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
-    port=int(os.environ.get('PORT')),
+    port=int(5000),
     debug=True)
