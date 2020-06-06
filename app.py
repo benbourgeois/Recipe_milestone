@@ -26,6 +26,17 @@ def insert_recipe():
     Content.insert_one(request.form.to_dict())
     return redirect(url_for('recipe_list'))
 
+@app.route('/favorites')
+def favorites():
+    return render_template('favorites.html',
+    Content=mongo.db.Content.find())
+
+@app.route('/add_favorites', methods=['POST'])
+def add_favorites():
+    Content=mongo.db.Content
+    Content.insert_one(request.form.to_dict())
+    return redirect(url_for('favorites.html'))
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
     port=int(5000),

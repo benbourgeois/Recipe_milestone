@@ -1,10 +1,13 @@
 {% extends 'base.html' %} {% block content %}
-
-<h3>Add Your Own Recipe!</h3>
+<div class= "row">
+    <div class= "title">
+        <h3>Add Your Own Recipe!</h3>
+    </div>
+</div>
 <div class="row">
 	<form action="{{ url_for('insert_recipe') }}" method="POST" class="col s12">
 		<div class="row">
-			<div class="input-field col s3">
+			<div class="input-field col s6">
 				<i class="material-icons prefix">format_align_justify</i>
 				<select id="categories" name="recipe_category">
                         <option value="" disabled selected>Choose your option</option>
@@ -48,7 +51,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="input-field col s3">
+			<div class="input-field col s6">
 				<i class="material-icons prefix">format_align_justify</i>
 				<input id="difficulty" name="difficulty" type="text" class="validate">
 				<label for="icon_prefix">Difficulty To Make This Dish</label>
