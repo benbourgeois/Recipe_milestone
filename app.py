@@ -54,6 +54,6 @@ def delete_recipe(content_id):
     return redirect(url_for('recipe_list'))
 
 if __name__ == '__main__':
-    app.run(host=os.environ.get('IP'),
-    port=int(3000),
+    app.run(host=os.environ.get('IP', "0.0.0.0"),
+    port=int(5000),
     debug=True)

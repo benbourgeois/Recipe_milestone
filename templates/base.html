@@ -15,29 +15,29 @@
 				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 				<ul id="nav-mobile" class="left hide-on-med-and-down">
 					<li><a href="{{ url_for('recipe_list') }}">Home</a></li>
-					<li><a href="{{ url_for('add_recipes') }}">Submit Your Own Recipes!</a></li>
+					<li><a href="{{ url_for('add_recipes') }}">Add Your Recipes!</a></li>
 					<li><a href="https://www.walmart.com/browse/home/cookware-sets/4044_623679_8140341_599265">Cooking Products</a></li>
 				</ul>
 				<ul class="side-nav" id="mobile-demo">
 					<li><a href="{{ url_for('recipe_list') }}">Home</a></li>
-					<li><a href="{{ url_for('add_recipes') }}">Submit Your Own Recipes!</a></li>
+					<li><a href="{{ url_for('add_recipes') }}">Add Your Recipes!</a></li>
 					<li><a href="https://www.walmart.com/browse/home/cookware-sets/4044_623679_8140341_599265">Cooking Products</a></li>
 				</ul>
 			</div>
 		</nav>
 	</header>
+    <style>
+</style>
 	{% block content %}
-
 	{% endblock %}
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
     $('.collapsible').collapsible();
-    $('select').formSelect();
+    $('select').material_select();
     $('.button-collapse').sideNav();
   });
-	</script>
 
 </body>
 

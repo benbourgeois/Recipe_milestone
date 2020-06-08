@@ -1,13 +1,13 @@
 {% extends 'base.html' %} {% block content %}
 <div class= "row">
-    <div class= "title">
+    <div class= "header">
         <h3>Make A Change!</h3>
     </div>
 </div>
 <div class="row">
 	<form action="{{ url_for('insert_recipe') }}" method="POST" class="col s12">
 		<div class="row">
-			<div class="input-field col s6">
+			<div class="input-field col s3">
 				<i class="material-icons prefix">format_align_justify</i>
 				<select id="categories" name="recipe_category">
                         <option value="" disabled selected>Choose your option</option>
@@ -43,21 +43,21 @@
 		<div class="row">
 			<div class="input-field col s12">
 				<i class="material-icons prefix">format_align_justify</i>
-				<input id="ingredients" name="ingredients" type="text" class="validate" value={{content.ingredients}}>
+				<input id="ingredients" name="ingredients" type="text" class="validate" value="{{content.ingredients}}">
 				<label for="icon_prefix">Ingredients</label>
 			</div>
 		</div>
 		<div class="row">
 			<div class="input-field col s12">
 				<i class="material-icons prefix">format_align_justify</i>
-				<input id="steps" name="steps" type="text" class="validate" value={{content.steps}}">
+				<input id="steps" name="steps" type="text" class="validate" value="{{content.steps}}">
 				<label for="icon_prefix">Steps To Making</label>
 			</div>
 		</div>
 		<div class="row">
 			<div class="input-field col s6">
 				<i class="material-icons prefix">format_align_justify</i>
-				<input id="difficulty" name="difficulty" type="text" class="validate" value= {{content.difficulty}}>
+				<input id="difficulty" name="difficulty" type="text" class="validate" value= "{{content.difficulty}}">
 				<label for="icon_prefix">Difficulty To Make This Dish</label>
 			</div>
 		</div>
