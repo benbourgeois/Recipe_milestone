@@ -18,6 +18,8 @@ With this site I hope to make the searching for a recipe a little easier in ways
 
 ### Future Features
 - Cooking utensils page - will allow the users to look through quailty cooking products they choose to purchase or not.
+- Favorites Button & Page - will allow users to pick and choose which recipe they want to keep in their favorites page.
+- Dedicated Cooking Utensils Page - A place for people looking for new utensils to use for a specific brand dedicated page.
 
 ## Technologies Used
 
@@ -25,6 +27,17 @@ With this site I hope to make the searching for a recipe a little easier in ways
 - Python
 - HTML5
 - CSS
+
+## Testing
+
+- Home Page:
+    * Using the drop down to look at recipes works properly when clicking on them and lets the recipes in the menu form to the drop down.
+    * Using the delete button will delete and refresh instantly to show it has been deleted.
+    * Using the edit button will take you to the dedicated edit recipe page that can only be reached from that button.
+    * Clicking on the name at the top center will take you back to the home page from anywhere in the site.
+
+- Add Recipe Page:
+    * 
 
 ## Deployment
 
