@@ -4,8 +4,8 @@ With this site I hope to make the searching for a recipe a little easier in ways
 
 ## UX
 
-- As someone who is looking for a new recipe to make dinner for the family, I can look on this site through the many submissions from people around the world.
-- I would like to submit my recipe on this site and I can do that by going to the "Submit Your Own Recipes" page and put in all the needed information.
+- I would like to keep my recipes in one places to possibly go back to and use again.
+- I would like to submit my recipe on this site and I can do that by going to the "Add Your Own Recipes" page and put in all the needed information.
 - As someone who is new cooking and is in need of cooking products, I can look to see what easy recipes they have on this page to try as well as new cooking utensils I can purchase to help make cooking easier.
 
 ## Features
@@ -20,10 +20,12 @@ With this site I hope to make the searching for a recipe a little easier in ways
 - Cooking utensils page - will allow the users to look through quailty cooking products they choose to purchase or not.
 - Favorites Button & Page - will allow users to pick and choose which recipe they want to keep in their favorites page.
 - Dedicated Cooking Utensils Page - A place for people looking for new utensils to use for a specific brand dedicated page.
+- Sharing Feature - will allow people to go to a separate page to the send the recipe to someone by email.
 
 ## Technologies Used
 
 - JQuery
+- MongoDB
 - Python
 - HTML5
 - CSS
@@ -37,7 +39,11 @@ With this site I hope to make the searching for a recipe a little easier in ways
     * Clicking on the name at the top center will take you back to the home page from anywhere in the site.
 
 - Add Recipe Page:
-    * 
+    * Arrow on drop down menu to pick meal type is now in the correct spot.
+        - Had am issue where the arrow was appearing under the menu.
+
+- Cooking Utensils Page:
+    * Will take you to a separate site for cooking utensils for now.
 
 ## Deployment
 
