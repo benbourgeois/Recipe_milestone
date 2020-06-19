@@ -40,7 +40,7 @@ With this site I hope to make the searching for a recipe a little easier in ways
 
 - Add Recipe Page:
     * Arrow on drop down menu to pick meal type is now in the correct spot.
-        - Had am issue where the arrow was appearing under the menu.
+        - Had an issue where the arrow was appearing under the menu.
 
 - Cooking Utensils Page:
     * Will take you to a separate site for cooking utensils for now.
