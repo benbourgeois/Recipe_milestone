@@ -7,18 +7,13 @@
 <div class="row">
 	<form action="{{ url_for('insert_recipe') }}" method="POST" class="col s12">
 
-		<div class="row">
-			<div class="input-field col s3">
-				<i class="material-icons prefix">format_align_justify</i>
-				<select id="categories" name="recipe_category">
-                        <option value="Choose your option" disabled selected>Choose your option</option>
+<select id="categories" name="recipe_category">
+                        <option value="Choose your option" disabled selected>What Type of Meal is This?</option>
                         {% for cat in categories %}
                         <option value="{{cat.recipe_category}}">{{cat.recipe_category}}</option>
                         {% endfor %}
                     </select>
-				<label>What Type of Meal is This?</label>
-			</div>
-		</div>
+
 		<div class="row">
 			<div class="input-field col s3">
 				<i class="material-icons prefix">account_circle</i>
